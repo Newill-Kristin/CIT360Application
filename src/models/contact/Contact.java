@@ -1,13 +1,19 @@
 package models.contact;
 
+import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
+import java.io.Serializable;
 import java.util.Objects;
+
+@Entity
+@Table(name = "contact", schema = "cit360contact")
 
 /**
  * Created by Kristin Newill (aingealfire) on 3/19/2019.
  */
 
-public class Contact {
+public class Contact implements Serializable {
     private int id;
     private String firstName;
     private String lastName;

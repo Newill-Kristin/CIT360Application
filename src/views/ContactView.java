@@ -30,10 +30,10 @@ public class ContactView implements MainHandler {
         List<Contact> list = q.list();
 
         for (Contact con : list) {
-            System.out.println("\n" + con.getFirstName() + " " + con.getLastName()
-                                    + "\n " + con.getAdd1()
-                                    + "\n" + con.getCity() + ", " + con.getState() + " " + con.getZip()
-                                    + "\n" + con.getTele() + "\n" + con.getEmail() + "\n" + "Record ID: " + con.getId() + "\n");
+            System.out.println("\n" + "Name: " + con.getFirstName() + " " + con.getLastName()
+                                + "\n" + "Address: " + con.getAdd1()
+                                + "\n" + con.getCity() + ", " + con.getState() + " " + con.getZip()
+                                + "\n" + "Telephone: " + con.getTele() + "\n" + "Email: " + con.getEmail() + "\n" + "Record ID: " + con.getId() + "\n");
         }
 
 

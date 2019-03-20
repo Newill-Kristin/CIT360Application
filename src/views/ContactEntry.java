@@ -40,10 +40,10 @@ public class ContactEntry implements MainHandler {
 
         tr.commit();
 
-        System.out.println("\n" + con.getFirstName() + " " + con.getLastName()
-                            + "\n " + con.getAdd1()
+        System.out.println("\n" + "Name: " + con.getFirstName() + " " + con.getLastName()
+                            + "\n" + "Address: " + con.getAdd1()
                             + "\n" + con.getCity() + ", " + con.getState() + " " + con.getZip()
-                            + "\n" + con.getTele() + "\n" + con.getEmail() + "\n" + "Record ID: " + con.getId() + "\n");
+                            + "\n" + "Telephone: " + con.getTele() + "\n" + "Email: " + con.getEmail() + "\n" + "Record ID: " + con.getId() + "\n");
 
         hs.close();
         tr = null;

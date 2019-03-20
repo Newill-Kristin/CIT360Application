@@ -25,7 +25,7 @@ public class ContactModify implements MainHandler {
         System.out.println("\n Updating a contact:");
         Transaction tr = hs.beginTransaction();
 
-        Contact con = hs.load(Contact.class, 4);
+        Contact con = hs.load(Contact.class, 2);
         con.setFirstName("Bubba");
 
         hs.update(con);
@@ -33,10 +33,10 @@ public class ContactModify implements MainHandler {
 
         System.out.println("\n Update Successful... \n");
 
-        System.out.println("\n" + con.getFirstName() + " " + con.getLastName()
-                + "\n " + con.getAdd1()
-                + "\n" + con.getCity() + ", " + con.getState() + " " + con.getZip()
-                + "\n" + con.getTele() + "\n" + con.getEmail() + "\n" + "Record ID: " + con.getId() + "\n");
+        System.out.println("\n" + "Name: " + con.getFirstName() + " " + con.getLastName()
+                            + "\n" + "Address: " + con.getAdd1()
+                            + "\n" + con.getCity() + ", " + con.getState() + " " + con.getZip()
+                            + "\n" + "Telephone: " + con.getTele() + "\n" + "Email: " + con.getEmail() + "\n" + "Record ID: " + con.getId() + "\n");
 
         hs.close();
         tr = null;
