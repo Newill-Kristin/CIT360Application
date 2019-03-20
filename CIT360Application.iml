@@ -29,7 +29,9 @@
           <factory-entry name="Entities" />
           <factory-entry name="NewPersistenceUnit" value="7a5fd0eb-dd1a-4e33-bb3b-e8a9ccb9a04c" />
         </datasource-mapping>
-        <naming-strategy-map />
+        <naming-strategy-map>
+          <unit-entry name="NewPersistenceUnit" />
+        </naming-strategy-map>
         <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/src/META-INF/persistence.xml" />
       </configuration>
     </facet>

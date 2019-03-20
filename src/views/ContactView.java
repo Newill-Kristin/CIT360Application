@@ -31,9 +31,9 @@ public class ContactView implements MainHandler {
 
         for (Contact con : list) {
             System.out.println("\n" + con.getFirstName() + " " + con.getLastName()
-                    + "\n " + con.getAdd1()
-                    + "\n" + con.getCity() + ", " + con.getState() + " " + con.getZip()
-                    + "\n" + con.getTele() + "\n" + con.getEmail() + "\n" + "Record ID: " + con.getId() + "\n");
+                                    + "\n " + con.getAdd1()
+                                    + "\n" + con.getCity() + ", " + con.getState() + " " + con.getZip()
+                                    + "\n" + con.getTele() + "\n" + con.getEmail() + "\n" + "Record ID: " + con.getId() + "\n");
         }
 
 

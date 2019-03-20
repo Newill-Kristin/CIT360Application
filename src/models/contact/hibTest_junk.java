@@ -7,6 +7,7 @@ import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.query.Query;
 
+
 import javax.persistence.metamodel.EntityType;
 
 /**
@@ -19,7 +20,7 @@ public class hibTest_junk {
     static {
         try {
             Configuration configuration = new Configuration();
-            configuration.configure();
+            configuration.configure("models/contact/hibernate.cfg.xml");
 
             ourSessionFactory = configuration.buildSessionFactory();
         } catch (Throwable ex) {
