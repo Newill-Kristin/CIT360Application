@@ -1,10 +1,12 @@
 package models.contact;
 
+import javax.persistence.Id;
 import java.util.Objects;
 
 /**
  * Created by Kristin Newill (aingealfire) on 3/19/2019.
  */
+
 public class Contact {
     private int id;
     private String firstName;
@@ -16,6 +18,7 @@ public class Contact {
     private String tele;
     private String email;
 
+    @Id
     public int getId() {
         return id;
     }

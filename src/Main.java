@@ -21,10 +21,10 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
 
-        //Create Menu
+        //Start ACP
         MainFront mf = new MainFront();
 
-        //Display Menu
+        //Run ACP
         mf.mainFront();
 
     }

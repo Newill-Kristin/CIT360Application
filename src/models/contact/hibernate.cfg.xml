@@ -9,16 +9,16 @@
         <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
         <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
         <property name="current_session_context_class">thread</property>
-        <!-- <property name="connection.pool_size">1</property> -->
         <property name="show_sql">true</property>
 
         <!-- DB Connection Info -->
-        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/cit360familiarity?useSSL=false</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/cit360contact?useSSL=false</property>
         <property name="hibernate.connection.username">root</property>
         <property name="hibernate.connection.password">klsql170!D</property>
 
         <!-- XML Mapping Info -->
         <mapping class="models.contact.Contact"/>
+        <mapping class="models.contact.ContactPK"/>
 
     </session-factory>
 

@@ -20,19 +20,21 @@ public class MainFront {
         mainControl.mapCommand("M", new ContactModify());
         mainControl.mapCommand("R", new ContactRemove());
 
-        HashMap acpMap = new HashMap();
+        HashMap mainMap = new HashMap();
 
         Scanner input = new Scanner(System.in);
         System.out.println("Please Select what you would like to see: \n"
+                + "V - To View all Contacts \n"
                 + "S - To Search for a Contact \n"
                 + "E - To Enter a new Contact \n"
                 + "M - To Modify an Existing Contact \n"
-                + "R - To Remove a contact \n");
+                + "R - To Remove a contact \n"
+                + "X - Exit \n");
 
         String choice = input.next();
         choice = choice.toUpperCase();
 
-        mainControl.handleRequest(choice, acpMap);
+        mainControl.handleRequest(choice, mainMap);
 
     }
 

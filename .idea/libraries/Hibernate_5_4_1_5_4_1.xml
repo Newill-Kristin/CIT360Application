@@ -1,6 +1,5 @@
 <component name="libraryTable">
-  <library name="Hibernate 5.4.1-5.4.1" type="hibernate">
-    <properties version="5.4.1" />
+  <library name="Hibernate 5.4.1-5.4.1">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/lib/javax.persistence-api-2.2.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/istack-commons-runtime-3.0.7.jar!/" />

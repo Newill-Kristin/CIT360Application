@@ -5,32 +5,51 @@
 <hibernate-mapping>
 
     <class name="models.contact.Contact" table="contact" schema="cit360contact">
-        <id name="id">
+
+        <composite-id mapped="true" class="models.contact.ContactPK">
+
+            <key-property name="id">
+                <column name="id" sql-type="int(11)"/>
+            </key-property>
+
+        </composite-id>
+
+        <!-- <id name="id">
             <column name="id" sql-type="int(11)"/>
-        </id>
+        </id> -->
+
         <property name="firstName">
             <column name="firstName" sql-type="varchar(25)" length="25"/>
         </property>
+
         <property name="lastName">
             <column name="lastName" sql-type="varchar(25)" length="25"/>
         </property>
+
         <property name="add1">
             <column name="add1" sql-type="varchar(60)" length="60" not-null="true"/>
         </property>
+
         <property name="city">
             <column name="city" sql-type="varchar(25)" length="25" not-null="true"/>
         </property>
+
         <property name="state">
             <column name="state" sql-type="varchar(20)" length="20" not-null="true"/>
         </property>
+
         <property name="zip">
             <column name="zip" sql-type="varchar(10)" length="10" not-null="true"/>
         </property>
+
         <property name="tele">
             <column name="tele" sql-type="varchar(15)" length="15" not-null="true"/>
         </property>
+
         <property name="email">
             <column name="email" sql-type="varchar(45)" length="45" not-null="true"/>
         </property>
+
     </class>
+
 </hibernate-mapping>
