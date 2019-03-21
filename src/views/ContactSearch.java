@@ -2,14 +2,9 @@ package views;
 
 import controllers.MainFront;
 import models.MainHandler;
-import models.contact.Contact;
-import models.contact.HibUtil;
-import org.hibernate.Session;
-import org.hibernate.Transaction;
-import org.hibernate.query.Query;
-import java.util.Collections;
+import views.search.*;
+
 import java.util.HashMap;
-import java.util.List;
 import java.util.Scanner;
 
 /**

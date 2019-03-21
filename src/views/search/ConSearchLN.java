@@ -1,17 +1,18 @@
-package views;
+package views.search;
 
 import controllers.MainFront;
 import models.contact.Contact;
 import models.contact.HibUtil;
 import org.hibernate.Session;
 import org.hibernate.query.Query;
+
 import java.util.List;
 import java.util.Scanner;
 
 /**
  * Created by Kristin Newill (aingealfire) on 3/20/2019.
  */
-public class ConSearchFN {
+public class ConSearchLN {
 
     Scanner input = new Scanner(System.in);
 
@@ -20,10 +21,10 @@ public class ConSearchFN {
         Session hs = HibUtil.getSessionFactory().openSession();
 
         //Call from Search
-        System.out.println("What First Name are you looking for? ");
+        System.out.println("What Last Name are you looking for? ");
         Scanner in = new Scanner(System.in);
         String in1 = in.nextLine();
-        String HQL = "FROM models.contact.Contact where firstName = :in1";
+        String HQL = "FROM models.contact.Contact where lastName = :in1";
         Query q = hs.createQuery(HQL);
         q.setParameter("in1", in1);
 

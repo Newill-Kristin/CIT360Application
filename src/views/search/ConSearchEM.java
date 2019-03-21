@@ -1,4 +1,4 @@
-package views;
+package views.search;
 
 import controllers.MainFront;
 import models.contact.Contact;
@@ -12,7 +12,7 @@ import java.util.Scanner;
 /**
  * Created by Kristin Newill (aingealfire) on 3/20/2019.
  */
-public class ConSearchZIP {
+public class ConSearchEM {
 
     Scanner input = new Scanner(System.in);
 
@@ -21,10 +21,10 @@ public class ConSearchZIP {
         Session hs = HibUtil.getSessionFactory().openSession();
 
         //Call from Search
-        System.out.println("What Zipcode are you looking for? ");
+        System.out.println("What Email are you looking for? ");
         Scanner in = new Scanner(System.in);
         String in1 = in.nextLine();
-        String HQL = "FROM models.contact.Contact where zip = :in1";
+        String HQL = "FROM models.contact.Contact where email = :in1";
         Query q = hs.createQuery(HQL);
         q.setParameter("in1", in1);
 
