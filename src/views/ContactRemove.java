@@ -18,7 +18,21 @@ public class ContactRemove implements MainHandler {
     @Override
     public void handleIt(HashMap<String, Object> data) throws Exception {
 
+        //Deleting a record in the database
+        Session hs = HibUtil.getSessionFactory().openSession();
+        Transaction tr = hs.beginTransaction();
 
+        Contact con = hs.load(Contact.class, 2);
+        if (con != null) {
+            hs.delete(con);
+        }
+
+        tr.commit();
+
+        System.out.println("\n Record deleted!");
+
+        hs.close();
+        tr = null;
 
 
     }

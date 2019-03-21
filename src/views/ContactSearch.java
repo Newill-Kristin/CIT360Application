@@ -7,7 +7,6 @@ import models.contact.HibUtil;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.query.Query;
-
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
@@ -22,18 +21,7 @@ public class ContactSearch implements MainHandler {
 
         this.runSearch();
 
-
-
-        this.endDemo();
-
     }
-
-    private void endDemo() throws Exception {
-
-        MainFront mf = new MainFront();
-        mf.mainFront();
-    }
-
 
     public void runSearch() throws Exception {
 
@@ -91,58 +79,43 @@ public class ContactSearch implements MainHandler {
 
     private void fn() throws Exception {
 
-        Session hs = HibUtil.getSessionFactory().openSession();
-
-        //Call from Search
-        System.out.println("What is the First Name: ");
-        Scanner in = new Scanner(System.in);
-        String fn1 = in.nextLine();
-        String HQL = "FROM models.contact.Contact"; //where firstName='fn1'
-        Query q = hs.createQuery(HQL);
-
-        List<Contact> list = q.list();
-
-        for (Contact con : list) {
-            System.out.println("\n" + "Name: " + con.getFirstName() + " " + con.getLastName()
-                                + "\n" + "Address: " + con.getAdd1()
-                                + "\n" + con.getCity() + ", " + con.getState() + " " + con.getZip()
-                                + "\n" + "Telephone: " + con.getTele() + "\n" + "Email: " + con.getEmail() + "\n" + "Record ID: " + con.getId() + "\n");
-        }
-
-        hs.close();
-
-        return;
+        ConSearchFN fn = new ConSearchFN();
+        fn.conSearch();
 
     }
 
     private void ln() throws Exception {
 
+        ConSearchLN ln = new ConSearchLN();
+        ln.conSearch();
 
-
-        return;
     }
 
     private void em() throws Exception {
 
+        ConSearchEM em = new ConSearchEM();
+        em.conSearch();
 
-
-        return;
     }
 
     private void tel() throws Exception {
 
+        ConSearchTEL tel = new ConSearchTEL();
+        tel.conSearch();
 
-        return;
     }
 
     private void zip() throws Exception {
 
+        ConSearchZIP zip = new ConSearchZIP();
+        zip.conSearch();
 
-        return;
     }
 
     private void mm() throws Exception {
-        this.endDemo();
+
+            MainFront mf = new MainFront();
+            mf.mainFront();
     }
 
 
