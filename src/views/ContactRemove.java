@@ -18,23 +18,32 @@ public class ContactRemove implements MainHandler {
     @Override
     public void handleIt(HashMap<String, Object> data) throws Exception {
 
-        //Deleting a record in the database
+        System.out.println("\n Enter contact Record ID to delete:");
+        Scanner in = new Scanner(System.in);
+        int id = Integer.parseInt(in.nextLine());
+
         Session hs = HibUtil.getSessionFactory().openSession();
         Transaction tr = hs.beginTransaction();
 
-        Contact con = hs.load(Contact.class, 2);
+        Contact con = hs.load(Contact.class, id);
         if (con != null) {
             hs.delete(con);
         }
 
         tr.commit();
 
-        System.out.println("\n Record deleted!");
+        System.out.println("\n Record deleted! \n");
 
         hs.close();
         tr = null;
+        this.endDemo();
 
+    }
 
+    private void endDemo() throws Exception {
+
+        MainFront mf = new MainFront();
+        mf.mainFront();
     }
 
 }
