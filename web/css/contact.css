@@ -394,7 +394,7 @@ ul.foot {
 /*Shared CSS*/
 
 h1 {
-    color: #1d3949;
+    color: #ffffff;
     text-align: center;
     font-size: 1.3em;
     padding: 5px;
@@ -402,7 +402,7 @@ h1 {
 }
 
 h2 {
-    color: #724a29;
+    color: #e6ffff;
     font-size: 1.2em;
     padding: 5px;
     text-align: center;
@@ -410,7 +410,7 @@ h2 {
 }
 
 h3 {
-    color: #194545;
+    color: #b3ffff;
     font-size: 1.1em;
     padding: 5px;
 }

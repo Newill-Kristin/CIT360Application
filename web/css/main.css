@@ -2,10 +2,12 @@
 
 html {
     background-color: #406868;
+    color: white;
+    align-content: center;
 }
 
 .button {
-    background-color: #1c87c9;
+    background-color: #1a001a;
     border: none;
     color: white;
     padding: 20px 34px;
