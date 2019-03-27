@@ -9,19 +9,69 @@
 
 </head>
 <body>
-<h1>Simple Contact Application</h1>
 
-<h2>Menu</h2>
+<main>
+    <h1>Main Menu</h1>
+    <button class="accordion"><a href="View.html">View All Contacts</a></button>
+    <div class="panel">
+    </div>
+    <button class="accordion"><a href="Enter.html">Add a New Contact</a></button>
+    <div class="panel">
+    </div>
+    <button class="accordion">Search for a Contact</button>
+    <div class="panel">
+        <a href="search/SearchFN.html">by First Name</a>
+        <a href="search/SearchLN.html">by Last Name</a>
+        <a href="search/SearchZIP.html">by Zip Code</a>
+        <a href="search/SearchTEL.html">by Telephone</a>
+        <a href="search/SearchEM.html">by Email</a>
+    </div>
+    <button class="accordion">Modify a Contact</button>
+    <div class="panel">
+        <a href="modify/ModifyFN.html">First Name</a>
+        <a href="modify/ModifyLN.html">Last Name</a>
+        <a href="modify/ModifyADD.html">Address</a>
+        <a href="modify/ModifyCITY.html">City</a>
+        <a href="modify/ModifySTATE.html">State</a>
+        <a href="modify/ModifyZIP.html">Zip Code</a>
+        <a href="modify/ModifyTEL.html">Telephone</a>
+        <a href="modify/ModifyEM.html">Email</a>
+    </div>
+    <button class="accordion"><a href="Remove.html.html">Remove a Contact</a></button>
+    <div class="panel">
+    </div>
+    <br><br>
+</main>
 
-<a href="View.html" class="button">View All Contacts</a>
+<footer>
+    <ul class="foot row" id="foot1">
+        <li class="copy" style = "float: left">&copy; 2019 KNewill</li>
+        <li class="company">CIT360 Application Project</li>
+        <li class="footRef" style = "float: right"></li>
+    </ul>
+</footer>
 
 
 
 
-<ul class="foot row" id="foot1">
-    <li class="copy" style = "float: left">&copy; 2019 KNewill</li>
-    <li class="company">CIT360 Application Project</li>
-    <li class="footRef" style = "float: right"></li>
-</ul>
+
 </body>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].onclick = function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight){
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        }
+    }
+</script>
+
 </html>

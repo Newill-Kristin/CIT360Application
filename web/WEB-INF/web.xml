@@ -3,5 +3,30 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
+    <display-name>Simple Contact Application for CIT360</display-name>
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+    <servlet>
+        <display-name>Main Menu</display-name>
+        <servlet-name>MainMenuServlet</servlet-name>
+        <servlet-class>controllers.MainMenuServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MainMenuServlet</servlet-name>
+        <url-pattern>/MainMenuServlet</url-pattern>
+    </servlet-mapping>
+
+
+
+<!--
+    <servlet>
+        <servlet-name></servlet-name>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name></servlet-name>
+        <url-pattern></url-pattern>
+    </servlet-mapping>
+-->
 
 </web-app>
