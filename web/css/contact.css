@@ -27,12 +27,12 @@ html {
 
 
     header {
-        width: 100%;
-        background-image: url(/img/headerSm2.jpg);
+        width: 400px;
+        background-image: url(../img/headerSm2.jpg);
+        min-height: 75px;
         background-repeat: no-repeat, no-repeat;
         background-position: top right, center;
         background-size: auto, cover;
-        min-height: 100px;
     }
 
     nav {
@@ -61,8 +61,8 @@ html {
     }
 
     #pkgLink {
-        background-image: url(/img/headerSm2.jpg);
-        min-height: 150px;
+        background-image: url(../img/headerSm2.jpg);
+        min-height: 50px;
         border-radius: .5em;
         font-size: 175%;
         padding-left: 15%;
@@ -71,7 +71,7 @@ html {
 
     #indCont, #indGuide, #indReg {
         width: 100%;
-        min-height: 100px;
+        min-height: 50px;
         margin-bottom: 10px;
         font-size: 150%;
     }
@@ -110,11 +110,11 @@ html {
 
     header {
         width: 100%;
-        background-image: url(/img/headerMd2.jpg);
+        background-image: url(../img/headerMd2.jpg);
         background-repeat: no-repeat, no-repeat;
         background-position: top right, center;
         background-size: auto, cover;
-        min-height: 125px;
+        min-height: 100px;
     }
 
     nav {
@@ -143,15 +143,15 @@ html {
     }
 
     #pkgLink {
-        background-image: url(/img/headerMd2.jpg);
-        min-height: 175px;
+        background-image: url(../img/headerMd2.jpg);
+        min-height: 75px;
         border-radius: .5em;
         font-size: 200%;
     }
 
     #indCont, #indGuide, #indReg {
         width: 100%;
-        min-height: 125px;
+        min-height: 75px;
         margin-left: 5px;
         margin-right: 5px;
         font-size: 175%;
@@ -190,11 +190,11 @@ html {
 
     header {
         width: 100%;
-        background-image: url(/img/headerLg2.jpg);
+        background-image: url(../img/headerLg2.jpg);
         background-repeat: no-repeat, no-repeat;
         background-position: top right, center;
         background-size: auto, cover;
-        min-height: 150px;
+        min-height: 125px;
     }
 
     nav {
@@ -223,15 +223,15 @@ html {
     }
 
     #pkgLink {
-        background-image: url(/img/headerLg2.jpg);
-        min-height: 225px;
+        background-image: url(../img/headerLg2.jpg);
+        min-height: 100px;
         border-radius: .5em;
         font-size: 250%;
     }
 
     #indCont, #indGuide, #indReg {
         width: 100%;
-        min-height: 175px;
+        min-height: 100px;
         margin-left: 5px;
         margin-right: 5px;
         font-size: 200%;
@@ -258,7 +258,8 @@ header {
     margin: 0;
     padding: 0;
     max-width: 1090px;
-    text-align: left;
+    max-height: 125px;
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
@@ -544,7 +545,7 @@ input.startReg {
 }
 
 #indCont {
-    background-image: url(/img/contact2.jpg);
+    background-image: url(../img/contact2.jpg);
 }
 
 .cuInfo {

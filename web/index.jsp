@@ -10,9 +10,7 @@
 </head>
 <body>
 <header>
-    <div class="item">
-        <img class="img-responsive" src="/img/headerLg.jpg">
-    </div>
+    <!---So the header happens -->
 </header>
 <main>
     <h1>Main Menu</h1>

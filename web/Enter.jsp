@@ -8,9 +8,7 @@
 </head>
 <body>
 <header>
-    <div class="item">
-        <img class="img-responsive" src="/img/headerLg.jpg">
-    </div>
+    <!---So the header happens -->
 </header>
 <nav>
     <div id="top">
