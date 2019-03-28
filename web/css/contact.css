@@ -28,11 +28,11 @@ html {
 
     header {
         width: 100%;
-        /*background-image: ;*/
+        background-image: url(/img/headerSm2.jpg);
         background-repeat: no-repeat, no-repeat;
         background-position: top right, center;
         background-size: auto, cover;
-        min-height: 108px;
+        min-height: 100px;
     }
 
     nav {
@@ -60,7 +60,16 @@ html {
         display: inline-block;
     }
 
-    #indCont, #indGuide, #indReg, #indfdt, #indoa, #indtm {
+    #pkgLink {
+        background-image: url(/img/headerSm2.jpg);
+        min-height: 150px;
+        border-radius: .5em;
+        font-size: 175%;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    #indCont, #indGuide, #indReg {
         width: 100%;
         min-height: 100px;
         margin-bottom: 10px;
@@ -77,21 +86,6 @@ html {
 
     .mapwrap iframe {
         max-height: 250px;
-    }
-
-    label.oneUp {width: 97%;}
-
-    label.twoUp {width: 97%;}
-
-    label.threeUp {width: 97%;}
-
-    .rad2 {
-        display: block;
-        text-align: left;
-    }
-
-    .pkgtable {
-        font-size: 80%
     }
 
 }
@@ -116,11 +110,11 @@ html {
 
     header {
         width: 100%;
-        /*background-image: ;*/
+        background-image: url(/img/headerMd2.jpg);
         background-repeat: no-repeat, no-repeat;
         background-position: top right, center;
         background-size: auto, cover;
-        min-height: 217px;
+        min-height: 125px;
     }
 
     nav {
@@ -148,7 +142,14 @@ html {
         display: flex;
     }
 
-    #indCont, #indGuide, #indReg, #indfdt, #indoa, #indtm  {
+    #pkgLink {
+        background-image: url(/img/headerMd2.jpg);
+        min-height: 175px;
+        border-radius: .5em;
+        font-size: 200%;
+    }
+
+    #indCont, #indGuide, #indReg {
         width: 100%;
         min-height: 125px;
         margin-left: 5px;
@@ -157,7 +158,7 @@ html {
     }
 
     .indPage a {
-        padding-top: 30px;
+        padding-top: 50px;
     }
 
     #contForm {
@@ -165,18 +166,6 @@ html {
         overflow-y: auto;
     }
 
-    label.oneUp {width: 97%;}
-
-    label.twoUp {width: 97%;}
-
-    label.threeUp {width: 97%;}
-
-    .rad2 {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        text-align: left;
-    }
 
 }
 
@@ -201,11 +190,11 @@ html {
 
     header {
         width: 100%;
-        /*background-image: ;*/
+        background-image: url(/img/headerLg2.jpg);
         background-repeat: no-repeat, no-repeat;
         background-position: top right, center;
         background-size: auto, cover;
-        min-height: 325px;
+        min-height: 150px;
     }
 
     nav {
@@ -233,7 +222,14 @@ html {
         display: flex;
     }
 
-    #indCont, #indGuide, #indReg, #indfdt, #indoa, #indtm  {
+    #pkgLink {
+        background-image: url(/img/headerLg2.jpg);
+        min-height: 225px;
+        border-radius: .5em;
+        font-size: 250%;
+    }
+
+    #indCont, #indGuide, #indReg {
         width: 100%;
         min-height: 175px;
         margin-left: 5px;
@@ -242,25 +238,12 @@ html {
     }
 
     .indPage a {
-        padding-top: 60px;
+        padding-top: 75px;
     }
 
     #contForm {
         max-height: 50%;
         overflow-y: auto;
-    }
-
-    label.oneUp {width: 97%;}
-
-    label.twoUp {width: 47%;}
-
-    label.threeUp {width: 30.25%;}
-
-    .rad2 {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        text-align: left;
     }
 
 }
@@ -453,7 +436,6 @@ body {
 }
 
 main {
-    display: block;
     font-size: 1em;
     justify-content: center;
     max-width: 1090px;
@@ -561,34 +543,9 @@ input.startReg {
     height: 100%;
 }
 
-.indPage a:hover {
-    font-size: 120%;
-}
-
 #indCont {
-    /*background-image: ;*/
+    background-image: url(/img/contact2.jpg);
 }
-
-#indGuide {
-    /*background-image: ;*/
-}
-
-#indReg {
-    /*background-image: ;*/
-}
-
-#indfdt {
-    /*background-image: ;*/
-}
-
-#indoa {
-    /*background-image: ;*/
-}
-
-#indtm {
-    /*background-image: ;*/
-}
-
 
 .cuInfo {
     text-align: center;
@@ -629,12 +586,6 @@ tr:hover {
 
 .pkgpginfo h3 {
     text-align: center;
-}
-
-input::-webkit-input-placeholder  {
-    font-family: 'Roboto Slab', serif;
-    font-size: 90%;
-    color: #8a9ea8;
 }
 
 /*----------------------- FLEX STUFF ---------------------------*/
@@ -731,8 +682,14 @@ label {
     text-align: left;
 }
 
+label.oneUp {width: 97%;}
+
+label.twoUp {width: 47%;}
+
+label.threeUp {width: 30.25%;}
+
 .radioBtn {
-    width: 20%;
+    width: 40%;
 }
 
 label span {
@@ -773,7 +730,12 @@ input.submitReg {
     transition: 0.3s;
 }
 
-
+.rad2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: left;
+}
 .rad2 input {
     margin-left: 20px;
 }
@@ -853,7 +815,7 @@ ul.refpanel li a:hover {
 }
 
 .refVid {
-    width: 100%;
+    width: 90%;
     height: auto;
     border-radius: .5em;
     margin-left: auto;

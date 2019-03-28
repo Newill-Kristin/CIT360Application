@@ -9,7 +9,11 @@
 
 </head>
 <body>
-
+<header>
+    <div class="item">
+        <img class="img-responsive" src="/img/headerLg.jpg">
+    </div>
+</header>
 <main>
     <h1>Main Menu</h1>
     <button class="accordion"><a href="View.jsp">View All Contacts</a></button>
