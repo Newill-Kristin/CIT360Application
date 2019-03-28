@@ -16,6 +16,7 @@ import java.util.Objects;
 
 public class ContactPK implements Serializable {
 
+    @Id
     private int id;
     private String firstName;
     private String lastName;
@@ -26,7 +27,22 @@ public class ContactPK implements Serializable {
     private String tele;
     private String email;
 
-    @Id
+    public ContactPK() {
+
+    }
+
+    public ContactPK(String firstName, String lastName, String add1, String city, String state, String zip, String tele, String email) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.add1 = add1;
+        this.city = city;
+        this.state = state;
+        this.zip = zip;
+        this.tele = tele;
+        this.email = email;
+    }
+
+
     public int getId() {
         return id;
     }

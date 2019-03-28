@@ -7,7 +7,6 @@ import models.contact.HibUtil;
 import org.hibernate.Session;
 import org.hibernate.query.Query;
 
-import javax.servlet.http.HttpServlet;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Scanner;
@@ -40,9 +39,9 @@ public class ContactView implements MainHandler {
 
         hs.close();
 
-        return;
+        //return false;
 
-        //this.endDemo();
+        this.endDemo();
 
     }
 

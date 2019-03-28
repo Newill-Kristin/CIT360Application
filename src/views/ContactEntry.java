@@ -6,10 +6,8 @@ import models.contact.Contact;
 import models.contact.HibUtil;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-import org.hibernate.query.Query;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Scanner;
 
 /**
@@ -53,7 +51,6 @@ public class ContactEntry implements MainHandler {
         Scanner in8 = new Scanner(System.in);
         String email = in8.nextLine();
 
-
         Session hs = HibUtil.getSessionFactory().openSession();
 
         //Adding a record in the database
@@ -74,10 +71,10 @@ public class ContactEntry implements MainHandler {
         tr.commit();
 
         System.out.println("\n You Created an entry for: "
-                            + "\n" + "Name: " + con.getFirstName() + " " + con.getLastName()
-                            + "\n" + "Address: " + con.getAdd1()
-                            + "\n" + con.getCity() + ", " + con.getState() + " " + con.getZip()
-                            + "\n" + "Telephone: " + con.getTele() + "\n" + "Email: " + con.getEmail() + "\n" + "Record ID: " + con.getId() + "\n");
+                + "\n" + "Name: " + con.getFirstName() + " " + con.getLastName()
+                + "\n" + "Address: " + con.getAdd1()
+                + "\n" + con.getCity() + ", " + con.getState() + " " + con.getZip()
+                + "\n" + "Telephone: " + con.getTele() + "\n" + "Email: " + con.getEmail() + "\n" + "Record ID: " + con.getId() + "\n");
 
         hs.close();
         tr = null;
@@ -91,6 +88,5 @@ public class ContactEntry implements MainHandler {
         MainFront mf = new MainFront();
         mf.mainFront();
     }
-
 
 }

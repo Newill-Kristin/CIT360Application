@@ -10,7 +10,7 @@
 
 
 
-<a href="index.html">Return to Main Menu</a>
+<a href="index.jsp">Return to Main Menu</a>
 
 </body>
 </html>

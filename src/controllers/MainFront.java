@@ -22,6 +22,7 @@ public class MainFront {
 
         HashMap mainMap = new HashMap();
 
+
         Scanner input = new Scanner(System.in);
         System.out.println("Please Select what you would like to see: \n"
                 + "V - To View all Contacts \n"
@@ -33,9 +34,20 @@ public class MainFront {
 
         String choice = input.next();
         choice = choice.toUpperCase();
-
+/*
+        String choice = null;
+        choice = httpInput(choice);
+*/
         mainControl.handleRequest(choice, mainMap);
 
     }
+
+    public String httpInput(String choice) throws Exception {
+
+        return choice;
+    }
+
+
+
 
 }

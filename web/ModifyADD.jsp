@@ -9,5 +9,9 @@
 </head>
 <body>
 
+Modify Address here
+
+<input class="startReg" type="button" onclick="window.location='index.jsp';" value="Return to Main Menu">
+
 </body>
 </html>

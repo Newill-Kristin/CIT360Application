@@ -5,17 +5,20 @@
          version="4.0">
     <display-name>Simple Contact Application for CIT360</display-name>
     <welcome-file-list>
-        <welcome-file>index.html</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
+
     <servlet>
-        <display-name>Main Menu</display-name>
-        <servlet-name>MainMenuServlet</servlet-name>
-        <servlet-class>controllers.MainMenuServlet</servlet-class>
+        <display-name>Enter Contact</display-name>
+        <servlet-name>EnterContact</servlet-name>
+        <servlet-class>controllers.EnterContact</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>MainMenuServlet</servlet-name>
-        <url-pattern>/MainMenuServlet</url-pattern>
+        <servlet-name>EnterContact</servlet-name>
+        <url-pattern>/EnterContact</url-pattern>
     </servlet-mapping>
+
+
 
 
 

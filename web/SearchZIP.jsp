@@ -8,5 +8,9 @@
 </head>
 <body>
 
+Search by ZIP!
+
+<input class="startReg" type="button" onclick="window.location='index.jsp';" value="Return to Main Menu">
+
 </body>
 </html>

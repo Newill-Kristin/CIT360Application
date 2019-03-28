@@ -6,7 +6,6 @@ import models.contact.Contact;
 import models.contact.HibUtil;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-import org.hibernate.query.Query;
 
 import java.util.HashMap;
 import java.util.Scanner;
