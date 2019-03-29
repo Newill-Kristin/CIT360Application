@@ -42,9 +42,17 @@
     </div>
 </nav>
 <main>
-
-    Remove the Things!
-
+    <div class="form-field">
+        <form action="RemoveContact" method="POST">
+            <fieldset class="persInfo">
+                <legend><span>Remove Contact</span></legend>
+                <label class="oneUp"> <span>Record ID: </span>
+                    <input name="id" type="number" placeholder="Record ID"> </label>
+            </fieldset>
+            <input type="submit" value="Submit" class="submitReg">
+            <input type="reset" value="Reset" class="submitReg">
+        </form>
+    </div>
 <input class="startReg" type="button" onclick="window.location='index.jsp';" value="Return to Main Menu">
 </main>
 </body>

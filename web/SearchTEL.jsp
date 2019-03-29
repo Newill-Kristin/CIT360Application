@@ -42,8 +42,16 @@
     </div>
 </nav>
 <main>
-    <div class="container">
-Search by TEL
+    <div class="form-field">
+        <form action="SearchTEL" method="POST">
+            <fieldset class="persInfo">
+                <legend><span>Search Contacts</span></legend>
+                <label class="oneUp"> <span>Telephone: <i>(No dashes or spaces)</i> </span>
+                    <input name="input" type="text" placeholder="1230001234" pattern="[0-9]{10}"> </label>
+            </fieldset>
+            <input type="submit" value="Submit" class="submitReg">
+            <input type="reset" value="Reset" class="submitReg">
+        </form>
     </div>
 <input class="startReg" type="button" onclick="window.location='index.jsp';" value="Return to Main Menu">
 </main>

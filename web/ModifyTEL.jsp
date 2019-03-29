@@ -43,8 +43,18 @@
     </div>
 </nav>
 <main>
-Modify TEL
-
+    <form action="ModADD" method="POST">
+        <fieldset class="persInfo">
+            <legend><span>Modify Contact</span></legend>
+            <label class="oneUp"> <span>Record ID: </span>
+                <input name="id" type="number" placeholder="Record ID"> </label>
+            <label class="oneUp"> <span>New Telephone: <i>(No spaces or separators)</i> </span>
+                <input name="input" type="text" placeholder="1230001234" pattern="[0-9]{10}"> </label>
+        </fieldset>
+        <input type="submit" value="Submit" class="submitReg">
+        <input type="reset" value="Reset" class="submitReg">
+    </form>
+    </div>
 <input class="startReg" type="button" onclick="window.location='index.jsp';" value="Return to Main Menu">
 </main>
 </body>

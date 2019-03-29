@@ -1,6 +1,10 @@
 package views;
 
 import controllers.MainFront;
+import views.search.ConSearchEM;
+import views.search.ConSearchLN;
+import views.search.ConSearchTEL;
+import views.search.ConSearchZIP;
 import models.MainHandler;
 import views.search.*;
 

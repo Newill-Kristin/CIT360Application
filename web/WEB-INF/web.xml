@@ -8,26 +8,80 @@
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
 
-    <servlet>
-        <display-name>Enter Contact</display-name>
-        <servlet-name>EnterContact</servlet-name>
-        <servlet-class>controllers.EnterContact</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>EnterContact</servlet-name>
-        <url-pattern>/EnterContact</url-pattern>
-    </servlet-mapping>
-
+    <!-- View All Contacts -->
     <servlet>
         <display-name>View Contacts</display-name>
         <servlet-name>ViewContacts</servlet-name>
-        <servlet-class>controllers.ViewContacts</servlet-class>
+        <servlet-class>views.ViewContacts</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ViewContacts</servlet-name>
         <url-pattern>/ViewContacts</url-pattern>
     </servlet-mapping>
 
+    <!-- New Contact -->
+    <servlet>
+        <display-name>Enter Contact</display-name>
+        <servlet-name>EnterContact</servlet-name>
+        <servlet-class>views.EnterContact</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EnterContact</servlet-name>
+        <url-pattern>/EnterContact</url-pattern>
+    </servlet-mapping>
+
+    <!-- Search options -->
+    <servlet>
+        <display-name>First Name Search</display-name>
+        <servlet-name>SearchFN</servlet-name>
+        <servlet-class>views.search.SearchFN</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchFN</servlet-name>
+        <url-pattern>/SearchFN</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <display-name>Last Name Search</display-name>
+        <servlet-name>SearchLN</servlet-name>
+        <servlet-class>views.search.SearchLN</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchLN</servlet-name>
+        <url-pattern>/SearchLN</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <display-name>Zip Code Search</display-name>
+        <servlet-name>SearchZIP</servlet-name>
+        <servlet-class>views.search.SearchZIP</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchZIP</servlet-name>
+        <url-pattern>/SearchZIP</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <display-name>Telephone Search</display-name>
+        <servlet-name>SearchTEL</servlet-name>
+        <servlet-class>views.search.SearchTEL</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchTEL</servlet-name>
+        <url-pattern>/SearchTEL</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <display-name>Email Search</display-name>
+        <servlet-name>SearchEM</servlet-name>
+        <servlet-class>views.search.SearchEM</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchEM</servlet-name>
+        <url-pattern>/SearchEM</url-pattern>
+    </servlet-mapping>
+
+    <!-- Modify options -->
 
 
 <!--

@@ -1,5 +1,8 @@
 package controllers;
 
+import views.ContactEntry;
+import views.ContactRemove;
+import views.ContactView;
 import views.*;
 
 import java.util.HashMap;

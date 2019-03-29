@@ -612,20 +612,6 @@ tr:hover {
     margin-bottom: 5px;
 }
 
-.mapwrap {
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 250px;
-}
-
-.mapwrap iframe {
-    position: absolute;
-    top: 0;
-    left: 10px;
-    width: 95%;
-    border: 2px solid #5b7d7d;
-}
 
 /*----------------------- FORM STUFF ---------------------------*/
 
@@ -651,6 +637,7 @@ form#cus1 {
     width: 95%;
     margin-left: auto;
     margin-right: auto;
+    justify-content: center;
 }
 
 fieldset.persInfo, .pkgInfo, .grpDet{
@@ -750,7 +737,7 @@ button.accordion {
     border-radius: .5em;
     cursor: pointer;
     padding: 18px;
-    width: 95%;
+    width: 90%;
     font-family: 'Roboto Slab', serif;
     text-align: center;
     font-size: 1em;
@@ -771,10 +758,10 @@ div.panel {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    width: 95%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
-    text-align: left;
+    text-align: center;
 }
 
 .guidetext {

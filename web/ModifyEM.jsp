@@ -43,7 +43,18 @@
     </div>
 </nav>
 <main>
-Modify Email Here
+    <form action="ModEM" method="POST">
+        <fieldset class="persInfo">
+            <legend><span>Modify Contact</span></legend>
+            <label class="oneUp"> <span>Record ID: </span>
+                <input name="id" type="number" placeholder="Record ID"> </label>
+            <label class="oneUp"> <span>New Email: </span>
+                <input name="input" type="text" placeholder="email@email.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"> </label>
+        </fieldset>
+        <input type="submit" value="Submit" class="submitReg">
+        <input type="reset" value="Reset" class="submitReg">
+    </form>
+    </div>
 </main>
 </body>
 </html>

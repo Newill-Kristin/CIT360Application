@@ -42,8 +42,17 @@
     </div>
 </nav>
 <main>
-Search by ZIP!
-
+    <div class="form-field">
+        <form action="SearchZIP" method="POST">
+            <fieldset class="persInfo">
+                <legend><span>Search Contacts</span></legend>
+                <label class="oneUp"> <span>Zip Code: </span>
+                    <input name="input" type="text" placeholder=""> </label>
+            </fieldset>
+            <input type="submit" value="Submit" class="submitReg">
+            <input type="reset" value="Reset" class="submitReg">
+        </form>
+    </div>
 <input class="startReg" type="button" onclick="window.location='index.jsp';" value="Return to Main Menu">
 </main>
 </body>

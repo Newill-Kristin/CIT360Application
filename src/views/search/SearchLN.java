@@ -1,10 +1,9 @@
-package controllers;
+package views.search;
 
 import models.contact.Contact;
 import models.contact.HibUtil;
 import org.hibernate.Session;
 import org.hibernate.query.Query;
-import views.ContactNew;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -18,21 +17,13 @@ import java.util.List;
 /**
  * Created by Kristin Newill (aingealfire) on 3/28/2019.
  */
-@WebServlet(name = "ViewContacts", urlPatterns = "/ViewContacts")
-public class ViewContacts extends HttpServlet {
+@WebServlet(name = "SearchLN", urlPatterns = "/SearchLN")
+public class SearchLN extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
-        String firstName = request.getParameter("firstName");
-        String lastName = request.getParameter("lastName");
-        String add1 = request.getParameter("add1");
-        String city = request.getParameter("city");
-        String state = request.getParameter("state");
-        String zip = request.getParameter("zip");
-        String tele = request.getParameter("tele");
-        String email = request.getParameter("email");
-        Contact contact = new Contact(firstName, lastName, add1, city, state, zip, tele, email);
+        String input = request.getParameter("input");
 
         try {
             out.println("<html>");
@@ -68,25 +59,27 @@ public class ViewContacts extends HttpServlet {
                     "</div></nav><main>");
 
             Session hs = HibUtil.getSessionFactory().openSession();
-            String HQL = "FROM models.contact.Contact";
+            String HQL = "FROM models.contact.Contact where lastName = :input";
             Query q = hs.createQuery(HQL);
+            q.setParameter("input", input);
 
             List<Contact> list = q.list();
 
             if(!list.isEmpty()) {
                 for (Contact con : list) {
                     out.println("<p>Name: " + con.getFirstName() + "&nbsp;" + con.getLastName() + "</p>" +
-                            "<p>Address: " + con.getAdd1() + "</p>" +
-                            "<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + con.getCity() + ", " + con.getState() + " " + con.getZip() + "</p>" +
+                            "<p>Address:</p><p> " + con.getAdd1() + "</p>" +
+                            "<p>" + con.getCity() + ", " + con.getState() + " " + con.getZip() + "</p>" +
                             "<p>Telephone: " + con.getTele() + "</p>" +
                             "<p>Email: " + con.getEmail() + "</p>" +
-                            "<p>Record ID:" + con.getId() + "</p>" + "\n");
+                            "<p>Record ID: " + con.getId() + "</p>" +
+                            "<p><hr></p>\n\n");
                 }
-               
-                out.println("<input class=\"startReg\" type=\"button\" onclick=\"open('index.jsp')\" value=\"Return to Main Menu\">");
+
+                out.println("<input class=\"startReg\" type=\"button\" onclick=\"window.location='index.jsp';\" value=\"Return to Main Menu\">");
             }else{
-                out.println("<h1>Entry Failed</h1>");
-                out.println("<input class=\"startReg\" type=\"button\" onclick=\"open('index.jsp')\" value=\"Try Again\">");
+                out.println("<h1>Search Failed</h1>");
+                out.println("<input class=\"startReg\" type=\"button\" onclick=\"window.location='index.jsp';\" value=\"Try Again\">");
             }
             out.println("</main></body></html>");
         } catch (Exception e) {
@@ -94,8 +87,6 @@ public class ViewContacts extends HttpServlet {
         } finally {
             out.close();
         }
-
-
 
     }
 

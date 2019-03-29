@@ -1,9 +1,6 @@
-package controllers;
+package views;
 
 import models.contact.Contact;
-import models.contact.ContactPK;
-import views.ContactEntry;
-import views.ContactNew;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -69,19 +66,17 @@ public class EnterContact extends HttpServlet {
             if(result){
                 out.println("<h1>You Created an entry for:</h1>");
                 out.println("<p>Name: " + contact.getFirstName() + "&nbsp;" + contact.getLastName() + "</p>" +
-                        "<p>Address: " + contact.getAdd1() + "</p>" +
-                        "<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + contact.getCity() + ", " + contact.getState() + " " + contact.getZip() + "</p>" +
+                        "<p>Address:</p><p> " + contact.getAdd1() + "</p>" +
+                        "<p>" + contact.getCity() + ", " + contact.getState() + " " + contact.getZip() + "</p>" +
                         "<p>Telephone: " + contact.getTele() + "</p>" +
                         "<p>Email: " + contact.getEmail() + "</p>" +
                         "<p>Record ID:" + contact.getId() + "</p>");
-                out.println("<input class=\"startReg\" type=\"button\" onclick=\"open('index.jsp')\" value=\"Return to Main Menu\">");
+                out.println("<input class=\"startReg\" type=\"button\" onclick=\"window.location='index.jsp';\" value=\"Return to Main Menu\">");
             }else{
                 out.println("<h1>Entry Failed</h1>");
-                out.println("<input class=\"startReg\" type=\"button\" onclick=\"open('index.jsp')\" value=\"Try Again\">");
+                out.println("<input class=\"startReg\" type=\"button\" onclick=\"window.location='index.jsp';\" value=\"Try Again\">");
             }
-            out.println("</main>");
-            out.println("</body>");
-            out.println("</html>");
+            out.println("</main></body></html>");
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
