@@ -18,7 +18,15 @@
         <url-pattern>/EnterContact</url-pattern>
     </servlet-mapping>
 
-
+    <servlet>
+        <display-name>View Contacts</display-name>
+        <servlet-name>ViewContacts</servlet-name>
+        <servlet-class>controllers.ViewContacts</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewContacts</servlet-name>
+        <url-pattern>/ViewContacts</url-pattern>
+    </servlet-mapping>
 
 
 

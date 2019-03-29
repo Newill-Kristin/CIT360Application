@@ -63,10 +63,8 @@
         <label class="twoUp"> <span>Email: </span>
             <input name="email" type="email" placeholder="email@email.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required> </label>
     </fieldset>
-        <div class="cbutton">
-            <td><input type="submit" value="Submit" class="submitReg"></td>
-            <td><input type="reset" value="Reset" class="submitReg"></td>
-        </div>
+            <input type="submit" value="Submit" class="submitReg">
+            <input type="reset" value="Reset" class="submitReg">
     </form>
 </div>
 <div class="cbutton"><input class="startReg" type="button" onclick="window.location='index.jsp';" value="Return to Main Menu"></div>
