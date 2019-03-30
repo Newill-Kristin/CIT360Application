@@ -43,6 +43,7 @@
     </div>
 </nav>
 <main>
+    <div class="form-field">
     <form action="ModCITY" method="POST">
         <fieldset class="persInfo">
             <legend><span>Modify Contact</span></legend>

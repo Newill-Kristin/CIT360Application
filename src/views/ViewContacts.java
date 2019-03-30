@@ -66,7 +66,7 @@ public class ViewContacts extends HttpServlet {
 
             if(!list.isEmpty()) {
                 for (Contact con : list) {
-                    out.println("<p>Name: " + con.getFirstName() + "&nbsp;" + con.getLastName() + "</p>" +
+                    out.println("\n<p>Name: " + con.getFirstName() + "&nbsp;" + con.getLastName() + "</p>" +
                             "<p>Address:</p><p> " + con.getAdd1() + "</p>" +
                             "<p>" + con.getCity() + ", " + con.getState() + " " + con.getZip() + "</p>" +
                             "<p>Telephone: " + con.getTele() + "</p>" +

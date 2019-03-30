@@ -71,8 +71,8 @@ public class RemoveContact extends HttpServlet {
                     "<a href=\"ModifyEM.jsp\">Email</a>" +
                     "</div></li>" +
                     "<li><a href=\"Remove.jsp\">Remove a Contact</a></li>" +
-                    "</div></nav><main>"+ "\n Record deleted! \n");
-            out.println("<input class=\"startReg\" type=\"button\" onclick=\"window.location='index.jsp';\" value=\"Return to Main Menu\">");
+                    "</div></nav><main>" + "</br> <p>Record deleted!</p> \n");
+            out.println("<p><input class=\"startReg\" type=\"button\" onclick=\"window.location='index.jsp';\" value=\"Return to Main Menu\"></p>");
             out.println("</main></body></html>");
         } catch (Exception e) {
             e.printStackTrace();

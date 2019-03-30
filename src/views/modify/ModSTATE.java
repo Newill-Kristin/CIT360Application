@@ -17,7 +17,7 @@ import java.io.PrintWriter;
 /**
  * Created by Kristin Newill (aingealfire) on 3/28/2019.
  */
-@WebServlet(name = "ModFN", urlPatterns = "/ModFN")
+@WebServlet(name = "ModSTATE", urlPatterns = "/ModSTATE")
 public class ModSTATE extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 

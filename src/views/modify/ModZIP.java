@@ -17,7 +17,7 @@ import java.io.PrintWriter;
 /**
  * Created by Kristin Newill (aingealfire) on 3/28/2019.
  */
-@WebServlet(name = "ModFN", urlPatterns = "/ModFN")
+@WebServlet(name = "ModZIP", urlPatterns = "/ModZIP")
 public class ModZIP extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
