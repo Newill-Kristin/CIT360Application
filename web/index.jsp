@@ -28,7 +28,7 @@
         <input class="submitReg" type="button" onclick="window.location='SearchTEL.jsp';" value="by Telephone">
         <input class="submitReg" type="button" onclick="window.location='SearchEM.jsp';" value="by Email">
     </div>
-    <button class="accordion">Modify a Contact</button>
+    <button class="accordion">Modify a Contact <i>(Must have Record ID)</i></button>
     <div class="panel" align="center">
         <input class="submitReg" type="button" onclick="window.location='ModifyFN.jsp';" value="First Name">
         <input class="submitReg" type="button" onclick="window.location='ModifyLN.jsp';" value="Last Name">

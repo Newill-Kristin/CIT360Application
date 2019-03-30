@@ -82,7 +82,85 @@
     </servlet-mapping>
 
     <!-- Modify options -->
+    <servlet>
+        <display-name>First Name Mod</display-name>
+        <servlet-name>ModFN</servlet-name>
+        <servlet-class>views.modify.ModFN</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ModFN</servlet-name>
+        <url-pattern>/ModFN</url-pattern>
+    </servlet-mapping>
 
+    <servlet>
+        <display-name>Last Name Mod</display-name>
+        <servlet-name>ModLN</servlet-name>
+        <servlet-class>views.modify.ModLN</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ModLN</servlet-name>
+        <url-pattern>/ModLN</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <display-name>Address Mod</display-name>
+        <servlet-name>ModADD</servlet-name>
+        <servlet-class>views.modify.ModADD</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ModADD</servlet-name>
+        <url-pattern>/ModADD</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <display-name>City Mod</display-name>
+        <servlet-name>ModCITY</servlet-name>
+        <servlet-class>views.modify.ModCITY</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ModCITY</servlet-name>
+        <url-pattern>/ModCITY</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <display-name>State Mod</display-name>
+        <servlet-name>ModSTATE</servlet-name>
+        <servlet-class>views.modify.ModSTATE</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ModSTATE</servlet-name>
+        <url-pattern>/ModSTATE</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <display-name>Zip Code Mod</display-name>
+        <servlet-name>ModZIP</servlet-name>
+        <servlet-class>views.modify.ModZIP</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ModZIP</servlet-name>
+        <url-pattern>/ModZIP</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <display-name>Telephone Mod</display-name>
+        <servlet-name>ModTEL</servlet-name>
+        <servlet-class>views.modify.ModTEL</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ModTEL</servlet-name>
+        <url-pattern>/ModTEL</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <display-name>Email Mod</display-name>
+        <servlet-name>ModEM</servlet-name>
+        <servlet-class>views.modify.ModEM</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ModEM</servlet-name>
+        <url-pattern>/ModEM</url-pattern>
+    </servlet-mapping>
 
 <!--
     <servlet>
